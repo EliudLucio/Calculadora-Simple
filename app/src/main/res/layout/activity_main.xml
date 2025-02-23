@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calcName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="@string/calculadora"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etNums">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@id/calcName"
+        app:layout_constraintBottom_toTopOf="@id/etNums">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/etNums"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calcName">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/hint"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+
+            android:digits="0123456789.-">
+        </EditText>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="@string/suma">
+        </TextView>
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:digits="0123456789.-"
+            android:gravity="center"
+            android:hint="@string/hint"
+
+            android:inputType="number">
+        </EditText>
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:text="@string/Calcular"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNums">
+    </android.widget.Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

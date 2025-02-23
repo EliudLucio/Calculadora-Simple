@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="suma">+</string>
+    <string name="Calcular">Calcular</string>
+    <string name="hint">0</string>
+
+    <string name="nav_calc">Calculadora</string>
+</resources>
