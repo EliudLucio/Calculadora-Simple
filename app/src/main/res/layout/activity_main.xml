@@ -17,7 +17,6 @@
         android:gravity="center"
         android:fontFamily="monospace"
         android:textSize="24sp"
-
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/etNums">
     </TextView>
