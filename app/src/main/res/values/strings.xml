@@ -6,4 +6,5 @@
     <string name="hint">0</string>
 
     <string name="nav_calc">Calculadora</string>
+    <string name="dropdown_menu">Menú</string>
 </resources>
